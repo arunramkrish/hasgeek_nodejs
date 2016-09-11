@@ -1,9 +1,11 @@
 var datasource = require("./datasource.js");
 
 module.exports.getTodos = function(resCallback) {
-    pool.getConnection(function(err,connection){
+    datasource.getConnection(function(err,connection){
         if (err) {
-          connection.release();
+            if (connection) {
+                connection.release();
+            }
           res.json({"code" : 100, "status" : "Error in connection database"});
           return;
         }   

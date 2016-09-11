@@ -1,8 +1,8 @@
 {
-    "connectionLimit" : 100, //important
-    "host"     : 'localhost',
-    "user"     : 'root',
-    "password" : 'root',
-    "database" : 'todos',
+    "connectionLimit" : 100,
+    "host"     : "localhost",
+    "user"     : "root",
+    "password" : "root",
+    "database" : "todos",
     "debug"    :  false
 }
