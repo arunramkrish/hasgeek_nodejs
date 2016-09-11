@@ -8,7 +8,7 @@ app.get("/", function(req, res) {
     
     //or https://nodejs.org/api/http.html#http_message_url
     var url = require('url');
-    var url_parts = url.parse(request.url, true);
+    var url_parts = url.parse(req.url, true);
     var query = url_parts.query;
     console.log(`Query ${query}`);
     
