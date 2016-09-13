@@ -6,8 +6,10 @@ module.exports.getTodos = function(callback) {
 /*    todoDao.getTodos(function(todos) {
         callback(todos);
     });*/
-     TodoModel.find({category:"hands-on"},
-        function(err, documents) {
+
+    // do the following to filter list of todos based on category   
+    //TodoModel.find({category:"hands-on"},
+    TodoModel.find(function(err, documents) {
             callback(documents);
         } );
 };
